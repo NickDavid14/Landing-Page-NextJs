@@ -1,5 +1,9 @@
+"use client"; 
+
+
+
 export default function Cardapio() {
-  const pratos = [
+  const pratos = [  
     {
       categoria: "Pizzas",
       items: [
@@ -40,15 +44,17 @@ export default function Cardapio() {
               {categoria.items.map((item) => (
                 <div
                   key={item.nome}
-                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
+                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-2xl"
                 >
                   <img
                     src={item.img}
                     alt={item.nome}
+                    width={400} 
+                    height={400} 
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-6 text-center">
-                    <h3 className="text-xl font-bold mb-2">{item.nome}</h3>
+                    <h3 className="text-red-600 text-xl font-bold mb-2">{item.nome}</h3>
                     <p className="text-gray-600 mb-4">{item.descricao}</p>
                     <p className="text-red-700 font-semibold text-lg">{item.preco}</p>
                   </div>
