@@ -1,4 +1,4 @@
-"use client"
+"use cl"
 import { useState } from "react";
 
 export default function Reservas() {

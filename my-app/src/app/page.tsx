@@ -1,62 +1,26 @@
-export default function Cardapio() {
-  const pratos = [
-    {
-      categoria: "Pizzas",
-      items: [
-        { nome: "Margherita", descricao: "Molho de tomate, mussarela e manjericão", preco: "R$35", img: "/images/margherita.jpg" },
-        { nome: "Pepperoni", descricao: "Mussarela, pepperoni e orégano", preco: "R$40", img: "/images/pepperoni.jpg" },
-        { nome: "Quatro Queijos", descricao: "Mussarela, provolone, gorgonzola e parmesão", preco: "R$42", img: "/images/quatro-queijos.jpg" },
-      ],
-    },
-    {
-      categoria: "Massas",
-      items: [
-        { nome: "Spaghetti à Carbonara", descricao: "Bacon, ovos e parmesão", preco: "R$38", img: "/images/spaghetti.jpg" },
-        { nome: "Lasanha Bolonhesa", descricao: "Camadas de massa, carne e molho bechamel", preco: "R$45", img: "/images/lasanha.jpg" },
-      ],
-    },
-    {
-      categoria: "Sobremesas",
-      items: [
-        { nome: "Tiramisu", descricao: "Tradicional sobremesa italiana", preco: "R$20", img: "/images/tiramisu.jpg" },
-        { nome: "Panna Cotta", descricao: "Creme cozido com calda de frutas", preco: "R$18", img: "/images/panna-cotta.jpg" },
-      ],
-    },
-  ];
-
+export default function Home() {
   return (
-    <main className="min-h-screen bg-yellow-50 py-12 px-6">
-      <h1 className="text-5xl font-bold text-center text-red-700 mb-12">
-        🍽️ Nosso Cardápio
-      </h1>
-
-      <div className="max-w-6xl mx-auto grid gap-12">
-        {pratos.map((categoria) => (
-          <section key={categoria.categoria}>
-            <h2 className="text-3xl font-semibold text-red-600 mb-6">
-              {categoria.categoria}
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {categoria.items.map((item) => (
-                <div
-                  key={item.nome}
-                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
-                >
-                  <img
-                    src={item.img}
-                    alt={item.nome}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6 text-center">
-                    <h3 className="text-xl font-bold mb-2">{item.nome}</h3>
-                    <p className="text-gray-600 mb-4">{item.descricao}</p>
-                    <p className="text-red-700 font-semibold text-lg">{item.preco}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        ))}
+    <main className="min-h-screen bg-white bg-cover bg-center flex items-center justify-center">
+      <div className="bg-black/60 backdrop-blur-sm text-white p-10 rounded-2xl shadow-2xl max-w-2xl text-center">
+        <h1 className="text-5xl font-bold mb-4">🍕 Restaurante Delicious</h1>
+        <p className="text-lg mb-6">
+          Sinta o sabor da Itália em cada prato. Massas artesanais, pizzas
+          assadas no forno à lenha e sobremesas inesquecíveis.
+        </p>
+        <div className="flex gap-4 justify-center">
+          <a
+            href="/cardapio"
+            className="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-xl font-semibold shadow-md transition"
+          >
+            Ver Cardápio
+          </a>
+          <a
+            href="/reservas"
+            className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl font-semibold shadow-md transition"
+          >
+            Fazer Reserva
+          </a>
+        </div>
       </div>
     </main>
   );
