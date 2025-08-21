@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Meu app",
-  description: "Tela inicial em Next.js!",
-};
+import Header from "./Header";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body>{children}</body>
+    <html lang="en">
+      <body className="antialiased">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
+
