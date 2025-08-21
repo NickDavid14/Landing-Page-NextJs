@@ -44,7 +44,7 @@ export default function Reservas() {
             }
             required
             placeholder="Digite seu nome"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+            className=" text-black w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
           />
         </div>
 
@@ -64,7 +64,7 @@ export default function Reservas() {
               setData(e.target.value)
             }
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+            className=" text-black w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
           />
         </div>
 
@@ -84,7 +84,7 @@ export default function Reservas() {
               setHora(e.target.value)
             }
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+            className="text-black w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
           />
         </div>
 
@@ -99,7 +99,7 @@ export default function Reservas() {
           <input
             id="pessoas"
             type="number"
-            min={1}
+            min={2}
             max={20}
             value={pessoas}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -107,7 +107,7 @@ export default function Reservas() {
             }
             required
             placeholder="Ex: 4"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+            className="text-red-800 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
           />
         </div>
 
@@ -119,7 +119,7 @@ export default function Reservas() {
           Reservar
         </button>
 
-        {/* Mensagem de sucesso */}
+        
         {mensagem && (
           <div className="mt-6 p-4 bg-green-100 text-green-700 rounded-lg whitespace-pre-line">
             {mensagem}
