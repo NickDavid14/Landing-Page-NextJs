@@ -9,7 +9,7 @@ export default function Cardapio() {
       items: [
         { nome: "Margherita", descricao: "Molho de tomate, mussarela e manjericão", preco: "R$35", img: "/images/margherita.jpg" },
         { nome: "Pepperoni", descricao: "Mussarela, pepperoni e orégano", preco: "R$40", img: "/images/pepperoni.jpg" },
-        { nome: "Quatro Queijos", descricao: "Mussarela, provolone, gorgonzola e parmesão", preco: "R$42", img: "/images/quatro-queijos.jpg" },
+        { nome: "Quatro Queijos", descricao: "Mussarela, provolone, gorgonzola e parmesão", preco: "R$42", img: "/images/quatroqueijos.jpg" },
       ],
     },
     {
