@@ -5,19 +5,19 @@ export default function Header() {
     <header className="flex px-2 py-4 bg-red-900 text-black">
       <div className="flex items-center justify-between w-full mx-auto max-w-7xl">
         <div className="font-bold text-lg">
-          Delicious Restaurant
+          <img className="w-19 h-19" src="/images/Giuseppe.png" alt="Logo do restaurante"  />
         </div>
 
         <nav>
           <ul className="flex items-center justify-center gap-4">
             <li>
-              <Link href="/">Início</Link>
+              <Link className="text-white font-serif w-9 h-9" href="/">Início</Link>
             </li>
             <li>
-              <Link href="/reservas">Reservas</Link>
+              <Link className="text-white font-serif" href="/reservas">Reservas</Link>
             </li>
             <li>
-              <Link href="/cardapio">Cardápio</Link>
+              <Link className="text-white font-serif" href="/cardapio">Cardápio</Link>
             </li>
           </ul>
         </nav>
