@@ -1,24 +1,35 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <header className="flex px-2 py-4 bg-red-900 text-black">
-      <div className="flex items-center justify-between w-full mx-auto max-w-7xl">
-        <div className="font-bold text-lg">
-          <img className="w-15 h-15" src="/images/Giuseppe.png" alt="Logo do restaurante"  />
+    <header className="flex py-3 px-6 bg-red-900">
+      <div className="flex items-center justify-between w-full">
+        {/* Logo */}
+        <div>
+          <img
+            className="w-53 h-16 rounded-lg "
+            src="/images/Restaurant.png"
+            alt="Logo do restaurante"
+          />
         </div>
 
+        {/* Navegação */}
         <nav>
-          <ul className="flex items-center justify-center gap-4">
+          <ul className="flex items-center gap-9 ">
             <li>
-              <Link className="text-white font-serif w-9 h-9" href="/">Início</Link>
+              <Link className="text-white text-2xl font-serif hover:text-yellow-500 transition " href="/">
+                Início
+              </Link>
             </li>
             <li>
-              <Link className="text-white font-serif" href="/reservas">Reservas</Link>
+              <Link className="text-white text-2xl font-serif hover:text-yellow-500 transition" href="/reservas">
+                Reservas
+              </Link>
             </li>
             <li>
-              <Link className="text-white font-serif" href="/cardapio">Cardápio</Link>
+              <Link className="text-white text-2xl font-serif hover:text-yellow-500 transition" href="/cardapio">
+                Cardápio
+              </Link>
             </li>
           </ul>
         </nav>
