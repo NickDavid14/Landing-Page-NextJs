@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import Header from "./Header";
+import Header from "./Navbar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

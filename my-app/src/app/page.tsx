@@ -1,3 +1,5 @@
+import { Slider } from "@/components/ui/slider";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-r from-yellow-50 to-orange-50 flex justify-center px-6">
@@ -12,7 +14,7 @@ export default function Home() {
             Sinta o sabor da Itália em cada prato. Massas artesanais, pizzas
             assadas no forno à lenha e sobremesas inesquecíveis.
           </p>
-
+          <Slider/>
           <div className="flex gap-4 flex-wrap">
             <a
               href="/cardapio"
