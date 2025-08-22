@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-r from-yellow-50 to-orange-50 flex justify-center px-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start max-w-6xl relative mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start max-w-6xl relative mt-0">
         
         
         <div className="space-y-6 mt-20 bg-amber-50">
@@ -42,16 +42,16 @@ export default function Home() {
         </div>
 
         {/* Imagem dos pratos */}
-        <div className="relative flex justify-center mt-20">
+        <div className="relative flex  bg-red-900 w-183 h-140 rounded-es-full ">
           <img
             src="/images/pizza.jpg"
             alt="Prato principal"
-            className="w-72 h-72 object-cover rounded-full shadow-xl border-8 border-yellow-100"
+            className="w-72 h-72 object-cover rounded-full shadow-xl border-8 border-white mt-20 ml-20" 
           />
           <img
             src="/images/spaghetti.jpg"
             alt="Prato extra"
-            className="w-40 h-40 object-cover rounded-full shadow-lg border-4 border-yellow-100 absolute -bottom-10 -right-6"
+            className="w-40 h-40 object-cover rounded-full shadow-lg border-4 border-white mt-83"
           />
         </div>
       </div>
