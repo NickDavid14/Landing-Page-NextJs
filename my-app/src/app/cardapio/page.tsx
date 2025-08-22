@@ -44,7 +44,7 @@ export default function Cardapio() {
               {categoria.items.map((item) => (
                 <div
                   key={item.nome}
-                  className="bg-white rounded-2xl overflow-hidden shadow-lg  transition-transform duration-300 ease-in-out hover:shadow-2xl"
+                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-2xl"
                 >
                   <img
                     src={item.img}
