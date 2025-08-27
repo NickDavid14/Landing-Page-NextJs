@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex py-3 px-6 bg-red-900">
+    <header className="flex py-3 px-6 bg-red-900 max-w-screen ">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
         <div>
@@ -17,7 +17,7 @@ export default function Header() {
         <nav>
           <ul className="flex items-center gap-9 ">
             <li>
-              <Link className="text-white text-2xl font-serif hover:text-yellow-500 transition " href="/">
+              <Link className="text-white text-2xl font-serif hover:text-yellow-500 transition hover:scale-200 " href="/">
                 Início
               </Link>
             </li>
