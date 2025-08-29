@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WobbleCardDemo from "./cards/page";
 
 export default function Home() {
   return (
@@ -57,6 +58,10 @@ export default function Home() {
       
       <div className="w-full mt-16">
         <div className="h-[200px] sm:h-[300px] lg:h-[400px] bg-[url('/images/tiramisu.jpg')] bg-cover bg-center rounded-2xl brightness-30"></div>
+      </div>
+
+      <div>
+        <WobbleCardDemo></WobbleCardDemo>
       </div>
 
       
