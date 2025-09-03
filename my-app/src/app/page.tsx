@@ -1,5 +1,7 @@
 import Image from "next/image";
 import WobbleCardDemo from "./cards/page";
+import Cards from "@/components/ui/Card";
+
 
 export default function Home() {
   return (
@@ -59,15 +61,19 @@ export default function Home() {
       <div className="w-full mt-16">
         <div className="h-[200px] sm:h-[300px] lg:h-[400px] bg-[url('/images/tiramisu.jpg')] bg-cover bg-center rounded-2xl brightness-30"></div>
       </div>
-
-      <div>
-        <WobbleCardDemo></WobbleCardDemo>
+      <div className="flex items-center justify-between w-full text-white ">
+        <Cards  source='/Images/quatroqueijos.jpg' text="Pizza Quatro Queijos" small="Mussarela, provolone, gorgonzola e parmesão, massa de pizza" h4="R$42"></Cards>
+        <Cards  source='/Images/tiramisu.jpg' text="Tiramisu" small="Biscoitos tipo savoiardi,queijo mascarpone, gemas de ovo, açúcar,cacau em pó polvilhado." h4="R$20"></Cards>
+        <Cards  source='/Images/spaghetti.jpg' text="Spaghetti" small="Massa al dente, molho de tomate fresco, alho, azeite extra virgem, manjericão, parmesão ralado." h4="R$38"></Cards>
+       
       </div>
-
+      <div>
+        
+      </div>
       
-
       
       <a
+        title="Whatsapp"
         href="https://w.app/e4f6j9"
         target="_blank"
         rel="noopener noreferrer"
