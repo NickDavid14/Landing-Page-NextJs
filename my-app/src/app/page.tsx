@@ -1,11 +1,12 @@
 import Image from "next/image";
 import WobbleCardDemo from "./cards/page";
-import Cards from "@/components/ui/Card";
+import Cards from "@/components/ui/card";
+import Contatos from "@/components/ui/Contatos";
 
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-r bg-amber-100 flex flex-col items-center justify-center px-6 py-12">
+    <main className="min-h-screen bg-gradient-to-r bg-amber-100 flex flex-col items-center justify-center px-6">
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-7xl">
         
@@ -37,7 +38,7 @@ export default function Home() {
         </div>
 
         
-        <div className="relative flex justify-center lg:justify-end">
+        <div className="relative flex justify-center lg:justify-end mt-10">
           <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[380px] lg:h-[380px]">
             <Image
               src="/images/pizza.jpg"
@@ -67,9 +68,9 @@ export default function Home() {
         <Cards  source='/Images/spaghetti.jpg' text="Spaghetti" small="Massa al dente, molho de tomate fresco, alho, azeite extra virgem, manjericão, parmesão ralado." h4="R$38"></Cards>
        
       </div>
-      <div>
-        
-      </div>
+    <div className="mt-40 ml-0">
+      <Contatos></Contatos>
+    </div>
       
       
       <a

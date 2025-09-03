@@ -11,7 +11,7 @@ type CardProps = {
 
 export default function Cards({ source,text,small,h4 }: CardProps) {
   return (
-    <Card className="py-4 bg-red-900 mt-20 rounded-md w-80 h-80 ">
+    <Card className="py-4 bg-red-900 mt-20 rounded-md w-80 h-80 hover:scale-105 transiton ">
       <CardHeader className="pb-0 pt-2 px-4 flex-col ">
         <p className="text-tiny text-yellow-300 font-bold">{text}</p>
         <small className="text-default-500">{small}</small>
